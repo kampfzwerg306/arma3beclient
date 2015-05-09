@@ -21,6 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arma3BEClient.Libs", "Arma3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arma3BEClient.Steam", "Arma3BEClient.Steam\Arma3BEClient.Steam.csproj", "{B2948BD4-B413-4E9D-B9ED-41261B0C56DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arma3BEClient.ServiceClient", "Arma3BEClient.ServiceClient\Arma3BEClient.ServiceClient.csproj", "{7551CF19-BA8F-438F-BBCE-3D9417935D6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B96E3CC-E991-4B56-814A-4FCF9C591D1F}"
+	ProjectSection(SolutionItems) = preProject
+		Arma3BEClient.pssln = Arma3BEClient.pssln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +70,10 @@ Global
 		{B2948BD4-B413-4E9D-B9ED-41261B0C56DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2948BD4-B413-4E9D-B9ED-41261B0C56DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2948BD4-B413-4E9D-B9ED-41261B0C56DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7551CF19-BA8F-438F-BBCE-3D9417935D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7551CF19-BA8F-438F-BBCE-3D9417935D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7551CF19-BA8F-438F-BBCE-3D9417935D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7551CF19-BA8F-438F-BBCE-3D9417935D6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
