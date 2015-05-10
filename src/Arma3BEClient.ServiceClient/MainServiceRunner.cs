@@ -47,6 +47,8 @@ namespace Arma3BEClient.ServiceClient
                         _log.Error(ex);
                     }
                 }
+
+                GC.KeepAlive(activeServers);
             }
         }
 
