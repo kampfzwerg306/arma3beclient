@@ -41,6 +41,9 @@
     <Reference Include="EasyNetQ">
       <HintPath>..\packages\EasyNetQ.0.47.10.384\lib\net40\EasyNetQ.dll</HintPath>
     </Reference>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.9.1.1\lib\net20\JetBrains.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>

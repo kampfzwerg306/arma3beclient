@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Arma3BEClient.Common.Messaging
+namespace Arma3BEClient.Common
 {
     public abstract class DisposeObject : IDisposable
     {

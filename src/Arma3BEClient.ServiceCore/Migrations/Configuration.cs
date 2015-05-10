@@ -1,3 +1,5 @@
+using Arma3BEClient.ServiceCore.Context;
+
 namespace Arma3BEClient.ServiceCore.Migrations
 {
     using System;
@@ -5,14 +7,14 @@ namespace Arma3BEClient.ServiceCore.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Arma3BEClient.Libs.Context.Arma3BeClientServiceContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Arma3BeClientServiceContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Arma3BEClient.Libs.Context.Arma3BeClientServiceContext context)
+        protected override void Seed(Arma3BeClientServiceContext context)
         {
             //  This method will be called after migrating to the latest version.
 

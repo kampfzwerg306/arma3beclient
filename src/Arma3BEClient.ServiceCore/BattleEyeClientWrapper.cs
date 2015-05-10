@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Net;
+using Arma3BEClient.Common;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Common.Messaging;
 using Arma3BEClient.ServiceCore.Messages;
 using BattleNET;
+using PostSharp.Patterns.Diagnostics;
+using PostSharp.Extensibility;
 
 namespace Arma3BEClient.ServiceCore
 {
+    [Log("LoggingProfile", AttributeTargetMemberAttributes = MulticastAttributes.Protected | MulticastAttributes.Public)]
     public class BattleEyeClientWrapper : DisposeObject
     {
         private readonly Guid _serverId;
@@ -30,8 +34,7 @@ namespace Arma3BEClient.ServiceCore
             _port = port;
             _password = password;
             _log = log;
-
-            InitClients();
+            
             InitBus();
         }
 

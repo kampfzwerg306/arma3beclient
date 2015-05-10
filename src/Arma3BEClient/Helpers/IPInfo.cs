@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Configuration;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using MaxMind.GeoIP2;
 
-namespace Arma3BEClient.Common.Helpers
+namespace Arma3BEClient.Helpers
 {
     public static class IPInfo
     {

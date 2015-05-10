@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using JetBrains.Annotations;
 using log4net.Config;
 
 namespace Arma3BEClient.Common.Logging
@@ -67,26 +68,31 @@ namespace Arma3BEClient.Common.Logging
             _log.Debug(m, exception);
         }
 
+        [StringFormatMethod("format")]
         public void DebugFormat(string format, params object[] args)
         {
             _log.DebugFormat(format, args);
         }
 
+        [StringFormatMethod("format")]
         public void DebugFormat(string format, object arg0)
         {
             _log.DebugFormat(format, arg0);
         }
 
+        [StringFormatMethod("format")]
         public void DebugFormat(string format, object arg0, object arg1)
         {
             _log.DebugFormat(format, arg0, arg1);
         }
-
+        
+        [StringFormatMethod("format")]
         public void DebugFormat(string format, object arg0, object arg1, object arg2)
         {
             _log.DebugFormat(format, arg0, arg1, arg2);
         }
 
+        [StringFormatMethod("format")]
         public void DebugFormat(IFormatProvider provider, string format, params object[] args)
         {
             _log.DebugFormat(provider, format, args);
@@ -115,26 +121,31 @@ namespace Arma3BEClient.Common.Logging
             _log.Info(m, exception);
         }
 
+        [StringFormatMethod("format")]
         public void InfoFormat(string format, params object[] args)
         {
             _log.InfoFormat(format, args);
         }
 
+        [StringFormatMethod("format")]
         public void InfoFormat(string format, object arg0)
         {
             _log.InfoFormat(format, arg0);
         }
 
+        [StringFormatMethod("format")]
         public void InfoFormat(string format, object arg0, object arg1)
         {
             _log.InfoFormat(format, arg0, arg1);
         }
 
+        [StringFormatMethod("format")]
         public void InfoFormat(string format, object arg0, object arg1, object arg2)
         {
             _log.InfoFormat(format, arg0, arg1, arg2);
         }
 
+        [StringFormatMethod("format")]
         public void InfoFormat(IFormatProvider provider, string format, params object[] args)
         {
             _log.InfoFormat(provider, format, args);
@@ -160,26 +171,31 @@ namespace Arma3BEClient.Common.Logging
         }
 
 
+        [StringFormatMethod("format")]
         public void WarnFormat(string format, params object[] args)
         {
             _log.WarnFormat(format, args);
         }
 
+        [StringFormatMethod("format")]
         public void WarnFormat(string format, object arg0)
         {
             _log.WarnFormat(format, arg0);
         }
 
+        [StringFormatMethod("format")]
         public void WarnFormat(string format, object arg0, object arg1)
         {
             _log.WarnFormat(format, arg0, arg1);
         }
 
+        [StringFormatMethod("format")]
         public void WarnFormat(string format, object arg0, object arg1, object arg2)
         {
             _log.WarnFormat(format, arg0, arg1, arg2);
         }
 
+        [StringFormatMethod("format")]
         public void WarnFormat(IFormatProvider provider, string format, params object[] args)
         {
             _log.WarnFormat(provider, format, args);
@@ -203,26 +219,31 @@ namespace Arma3BEClient.Common.Logging
             _log.Error(m, exception);
         }
 
+        [StringFormatMethod("format")]
         public void ErrorFormat(string format, params object[] args)
         {
             _log.ErrorFormat(format, args);
         }
 
+        [StringFormatMethod("format")]
         public void ErrorFormat(string format, object arg0)
         {
             _log.ErrorFormat(format, arg0);
         }
 
+        [StringFormatMethod("format")]
         public void ErrorFormat(string format, object arg0, object arg1)
         {
             _log.ErrorFormat(format, arg0, arg1);
         }
 
+        [StringFormatMethod("format")]
         public void ErrorFormat(string format, object arg0, object arg1, object arg2)
         {
             _log.ErrorFormat(format, arg0, arg1, arg2);
         }
 
+        [StringFormatMethod("format")]
         public void ErrorFormat(IFormatProvider provider, string format, params object[] args)
         {
             _log.ErrorFormat(provider, format, args);
@@ -246,26 +267,31 @@ namespace Arma3BEClient.Common.Logging
             _log.Fatal(m, exception);
         }
 
+        [StringFormatMethod("format")]
         public void FatalFormat(string format, params object[] args)
         {
             _log.FatalFormat(format, args);
         }
 
+        [StringFormatMethod("format")]
         public void FatalFormat(string format, object arg0)
         {
             _log.FatalFormat(format, arg0);
         }
 
+        [StringFormatMethod("format")]
         public void FatalFormat(string format, object arg0, object arg1)
         {
             _log.FatalFormat(format, arg0, arg1);
         }
 
+        [StringFormatMethod("format")]
         public void FatalFormat(string format, object arg0, object arg1, object arg2)
         {
             _log.FatalFormat(format, arg0, arg1, arg2);
         }
 
+        [StringFormatMethod("format")]
         public void FatalFormat(IFormatProvider provider, string format, params object[] args)
         {
             _log.FatalFormat(provider, format, args);

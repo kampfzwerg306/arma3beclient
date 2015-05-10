@@ -1,7 +1,7 @@
 ﻿using System.Data.Entity;
-using Arma3BEClient.Libs.ModelCompact;
+using Arma3BEClient.ServiceCore.Model;
 
-namespace Arma3BEClient.Libs.Context
+namespace Arma3BEClient.ServiceCore.Context
 {
     public class Arma3BeClientServiceContext : DbContext
     {
@@ -9,6 +9,8 @@ namespace Arma3BEClient.Libs.Context
         public DbSet<Note> Comments { get; set; }
         public DbSet<Player> Player { get; set; }
         public DbSet<ServerInfo> ServerInfo { get; set; }
+
+        public DbSet<AllowedUsers> AllowedUsers { get; set; }
 
         public DbSet<Settings> Settings { get; set; }
 
@@ -31,7 +33,7 @@ namespace Arma3BEClient.Libs.Context
     }
 
 
-    class DbInitializer : CreateDatabaseIfNotExists<Arma3BeClientContext>
+    class DbInitializer : CreateDatabaseIfNotExists<Arma3BeClientServiceContext>
     {
         public DbInitializer()
         {

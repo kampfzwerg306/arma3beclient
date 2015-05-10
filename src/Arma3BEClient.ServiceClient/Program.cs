@@ -25,14 +25,16 @@ namespace Arma3BEClient.ServiceClient
                 try
                 {
                     mainServiceRunner.Start();
-                    Console.WriteLine("Press any key to stop...");
-                    Console.ReadKey(true);                    
-                    mainServiceRunner.Stop();
-                    
                 }
                 catch (Exception e)
                 {
                     log.Error(e);
+                }
+                finally
+                {
+                    Console.WriteLine("Press any key to stop...");
+                    Console.ReadKey(true);
+                    mainServiceRunner.Stop();
                 }
             }
         }
