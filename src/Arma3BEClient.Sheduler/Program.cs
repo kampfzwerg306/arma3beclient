@@ -82,6 +82,17 @@ namespace Arma3BEClient.Sheduler
 
     public class FakeLog : ILog
     {
+        public void Debug(object message, string memberName = null, string sourceFilePath = null, int sourceLineNumber = 0)
+        {
+            
+        }
+
+        public void Debug(object message, Exception exception, string memberName = null, string sourceFilePath = null,
+            int sourceLineNumber = 0)
+        {
+            
+        }
+
         public void DebugFormat(string format, object arg0)
         {
             
@@ -98,6 +109,22 @@ namespace Arma3BEClient.Sheduler
         }
 
         public void DebugFormat(IFormatProvider provider, string format, params object[] args)
+        {
+            
+        }
+
+        public void Info(string message)
+        {
+            
+        }
+
+        public void Info(object message, string memberName = null, string sourceFilePath = null, int sourceLineNumber = 0)
+        {
+            
+        }
+
+        public void Info(object message, Exception exception, string memberName = null, string sourceFilePath = null,
+            int sourceLineNumber = 0)
         {
             
         }
@@ -137,6 +164,17 @@ namespace Arma3BEClient.Sheduler
             
         }
 
+        public void Warn(object message, string memberName = null, string sourceFilePath = null, int sourceLineNumber = 0)
+        {
+            
+        }
+
+        public void Warn(object message, Exception exception, string memberName = null, string sourceFilePath = null,
+            int sourceLineNumber = 0)
+        {
+            
+        }
+
         public void Warn(object message)
         {
             
@@ -172,6 +210,17 @@ namespace Arma3BEClient.Sheduler
             
         }
 
+        public void Error(object message, string memberName = null, string sourceFilePath = null, int sourceLineNumber = 0)
+        {
+            
+        }
+
+        public void Error(object message, Exception exception, string memberName = null, string sourceFilePath = null,
+            int sourceLineNumber = 0)
+        {
+            
+        }
+
         public void Error(object message)
         {
             
@@ -203,6 +252,17 @@ namespace Arma3BEClient.Sheduler
         }
 
         public void ErrorFormat(IFormatProvider provider, string format, params object[] args)
+        {
+            
+        }
+
+        public void Fatal(object message, string memberName = null, string sourceFilePath = null, int sourceLineNumber = 0)
+        {
+            
+        }
+
+        public void Fatal(object message, Exception exception, string memberName = null, string sourceFilePath = null,
+            int sourceLineNumber = 0)
         {
             
         }

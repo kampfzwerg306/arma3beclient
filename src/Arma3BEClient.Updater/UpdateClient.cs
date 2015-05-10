@@ -13,7 +13,7 @@ using PostSharp.Extensibility;
 
 namespace Arma3BEClient.Updater
 {
-    [Log("New profile", AttributeTargetMemberAttributes = MulticastAttributes.Protected | MulticastAttributes.Public)]
+    [Log("LoggingProfile", AttributeTargetMemberAttributes = MulticastAttributes.Protected | MulticastAttributes.Public)]
     public class UpdateClient : IDisposable
     {
         private readonly string _host;
@@ -106,7 +106,9 @@ namespace Arma3BEClient.Updater
         protected virtual void OnConnectHandler()
         {
             EventHandler handler = ConnectHandler;
-            if (handler != null) handler(this, EventArgs.Empty);
+            if (handler != null)
+                if (_battlEyeClient != null && _battlEyeClient.Connected)
+                    handler(this, EventArgs.Empty);
         }
 
 
@@ -153,7 +155,8 @@ namespace Arma3BEClient.Updater
 
         void battlEyeClient_BattlEyeConnected(BattlEyeConnectEventArgs args)
         {
-            OnConnectHandler();
+            if (_battlEyeClient != null && _battlEyeClient.Connected)
+                OnConnectHandler();
         }
 
         public bool Connected { get { return _battlEyeClient != null && _battlEyeClient.Connected; } }
@@ -161,7 +164,7 @@ namespace Arma3BEClient.Updater
 
         public Task SendCommandAsync(CommandType type, string parameters = null)
         {
-            return Task.Run(()=>SendCommand(type, parameters));
+            return Task.Run(() => SendCommand(type, parameters));
         }
 
 

@@ -1,9 +1,8 @@
 ﻿using System;
-using log4net;
-using log4net.Config;
-using PostSharp.Patterns.Diagnostics;
+using Arma3BEClient.Common.Logging;
+using Arma3BEClient.Common.Messaging;
 using PostSharp.Extensibility;
-using ILog = Arma3BEClient.Common.Logging.ILog;
+using PostSharp.Patterns.Diagnostics;
 
 namespace Arma3BEClient.ServiceClient
 {
@@ -16,16 +15,43 @@ namespace Arma3BEClient.ServiceClient
         public MainServiceRunner(ILog log)
         {
             _log = log;
+            _log.Info("Starting");
         }
+
+        private RabbitMessageBus bus = new RabbitMessageBus();
 
         public void Start()
         {
-            throw new Exception("asd");
+
+            //bus.SunscribeMessage<MyMessage>(m => Console.WriteLine(m.Text));
+
+            //using ()
+            {
+                Console.WriteLine("Send 1");
+                bus.PublishMessage(new MyMessage());
+                Console.WriteLine("Send 2");
+                bus.PublishMessage(new MyMessage());
+                Console.WriteLine("Send 3");
+                bus.PublishMessage(new MyMessage());
+                Console.WriteLine("end send");
+            }
         }
 
         public void Stop()
         {
             
+        }
+
+        public class MyMessage
+        {
+            public Guid Id { get; set; }
+            public string Text { get; set; }
+
+            public MyMessage()
+            {
+                Id = Guid.NewGuid();
+                Text = Id.ToString();
+            }
         }
     }
 }

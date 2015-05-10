@@ -12,7 +12,7 @@ namespace Arma3BEClient.ServiceClient
         /// </summary>
         static void Main(string[] args)
         {
-            log4net.Config.XmlConfigurator.Configure();
+            //log4net.Config.XmlConfigurator.Configure();
             var log = new Log();
             MainServiceRunner mainServiceRunner = new MainServiceRunner(log);
 
@@ -27,18 +27,15 @@ namespace Arma3BEClient.ServiceClient
                 {
                     mainServiceRunner.Start();
                     Console.WriteLine("Press any key to stop...");
-                    Console.ReadKey(true);
+                    Console.ReadKey(true);                    
                     mainServiceRunner.Stop();
+                    
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    
-                    
+                    log.Error(e);
                 }
-                
             }
         }
-
-        
     }
 }

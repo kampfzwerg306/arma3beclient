@@ -14,7 +14,7 @@ namespace Arma3BEClient
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            log4net.Config.XmlConfigurator.Configure();
+            //log4net.Config.XmlConfigurator.Configure();
             _logger.Info("Startup");
         }
 

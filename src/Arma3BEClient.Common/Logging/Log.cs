@@ -1,28 +1,70 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+using log4net.Config;
 
 namespace Arma3BEClient.Common.Logging
 {
+
     public class Log : ILog
     {
         private static readonly Lazy<log4net.ILog> Logger = new Lazy<log4net.ILog>(() =>
             log4net.LogManager.GetLogger(typeof(log4net.Repository.Hierarchy.Logger)));
 
+        private static bool _configured;
+        private static readonly object Lock = new object();
+
+        private static void Configure()
+        {
+            if (!_configured)
+            {
+                lock (Lock)
+                {
+                    if (!_configured)
+                    {
+                        XmlConfigurator.Configure();
+                        _configured = true;
+                    }
+                }
+            }
+        }
+
         private log4net.ILog _log
         {
-            get { return Logger.Value; }
+            get
+            {
+                if (!_configured) Configure();
+                return Logger.Value;
+            }
+        }
+
+        private string MemberFormat(
+             string memberName = null,
+             string sourceFilePath = null,
+             int sourceLineNumber = 0,
+            object message = null)
+        {
+            return string.Format("{0}, {1} : {2}\n{3}", memberName, sourceFilePath, sourceLineNumber, message);
         }
 
 
         #region Implementation of ILog
 
-        public void Debug(object message)
+        public void Debug(object message,
+           [CallerMemberName] string memberName = null,
+           [CallerFilePath] string sourceFilePath = null,
+           [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Debug(message);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Debug(m);
         }
 
-        public void Debug(object message, Exception exception)
+        public void Debug(object message, Exception exception,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Debug(message, exception);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Debug(m, exception);
         }
 
         public void DebugFormat(string format, params object[] args)
@@ -50,14 +92,27 @@ namespace Arma3BEClient.Common.Logging
             _log.DebugFormat(provider, format, args);
         }
 
-        public void Info(object message)
+        public void Info(string message)
         {
             _log.Info(message);
         }
 
-        public void Info(object message, Exception exception)
+        public void Info(object message,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Info(message, exception);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Info(m);
+        }
+
+        public void Info(object message, Exception exception,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
+        {
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Info(m, exception);
         }
 
         public void InfoFormat(string format, params object[] args)
@@ -85,15 +140,25 @@ namespace Arma3BEClient.Common.Logging
             _log.InfoFormat(provider, format, args);
         }
 
-        public void Warn(object message)
+
+        public void Warn(object message,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Info(message);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Warn(m);
         }
 
-        public void Warn(object message, Exception exception)
+        public void Warn(object message, Exception exception,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Warn(message, exception);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Warn(m, exception);
         }
+
 
         public void WarnFormat(string format, params object[] args)
         {
@@ -120,14 +185,22 @@ namespace Arma3BEClient.Common.Logging
             _log.WarnFormat(provider, format, args);
         }
 
-        public void Error(object message)
+        public void Error(object message,
+           [CallerMemberName] string memberName = null,
+           [CallerFilePath] string sourceFilePath = null,
+           [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Error(message);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Error(m);
         }
 
-        public void Error(object message, Exception exception)
+        public void Error(object message, Exception exception,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Error(message, exception);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Error(m, exception);
         }
 
         public void ErrorFormat(string format, params object[] args)
@@ -155,14 +228,22 @@ namespace Arma3BEClient.Common.Logging
             _log.ErrorFormat(provider, format, args);
         }
 
-        public void Fatal(object message)
+        public void Fatal(object message,
+           [CallerMemberName] string memberName = null,
+           [CallerFilePath] string sourceFilePath = null,
+           [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Fatal(message);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Fatal(m);
         }
 
-        public void Fatal(object message, Exception exception)
+        public void Fatal(object message, Exception exception,
+            [CallerMemberName] string memberName = null,
+            [CallerFilePath] string sourceFilePath = null,
+            [CallerLineNumber] int sourceLineNumber = 0)
         {
-            _log.Fatal(message, exception);
+            var m = MemberFormat(memberName, sourceFilePath, sourceLineNumber, message);
+            _log.Fatal(m, exception);
         }
 
         public void FatalFormat(string format, params object[] args)
