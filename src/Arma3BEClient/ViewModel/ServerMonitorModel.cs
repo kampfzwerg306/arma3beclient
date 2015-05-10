@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Media;
 using Arma3BEClient.Commands;
+using Arma3BEClient.Common.Helpers;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Helpers;
 using Arma3BEClient.Libs.ModelCompact;
@@ -67,7 +68,7 @@ namespace Arma3BEClient.ViewModel
             _console = console;
 
 
-            var host = IPInfo.GetIPAddress(_currentServer.Host);
+            var host = IPHelper.GetIPAddress(_currentServer.Host);
 
             if (string.IsNullOrEmpty(host))
             {

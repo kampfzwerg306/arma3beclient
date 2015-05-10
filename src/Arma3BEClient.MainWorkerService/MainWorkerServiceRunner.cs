@@ -1,6 +1,7 @@
 ﻿using System;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Common.Messaging;
+using Arma3BEClient.ServiceCore.Messages;
 
 namespace Arma3BEClient.MainWorkerService
 {
@@ -16,10 +17,11 @@ namespace Arma3BEClient.MainWorkerService
             _log.Info("Starting");
         }
 
+        RabbitMessageBus _bus = new RabbitMessageBus();
+
         public void Start()
         {
-
-           
+            _bus.SunscribeMessage<RconServerMessage>("ServerMessage", x => System.Console.WriteLine(x.Message));
         }
 
         public void Stop()

@@ -9,6 +9,7 @@ using Arma3BEClient.Helpers;
 using Arma3BEClient.Steam;
 using GalaSoft.MvvmLight;
 using System;
+using Arma3BEClient.Common.Helpers;
 
 namespace Arma3BEClient.Models
 {
@@ -37,7 +38,7 @@ namespace Arma3BEClient.Models
 
             ExcecuteCommand = new ActionCommand(() => Task.Run(() =>
             {
-                var iphost = IPInfo.GetIPAddress(Host);
+                var iphost = IPHelper.GetIPAddress(Host);
                 var server = new Server(new IPEndPoint(IPAddress.Parse(iphost), Port));
 
                 var settings = new GetServerInfoSettings();
@@ -71,7 +72,7 @@ namespace Arma3BEClient.Models
             }),
                 () =>
                 {
-                    var iphost = IPInfo.GetIPAddress(Host);
+                    var iphost = IPHelper.GetIPAddress(Host);
 
                     if (string.IsNullOrEmpty(iphost))
                     {

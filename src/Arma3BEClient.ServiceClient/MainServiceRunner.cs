@@ -1,6 +1,7 @@
 ﻿using System;
+using Arma3BEClient.Common.Helpers;
 using Arma3BEClient.Common.Logging;
-using Arma3BEClient.Common.Messaging;
+using Arma3BEClient.ServiceCore;
 using PostSharp.Extensibility;
 using PostSharp.Patterns.Diagnostics;
 
@@ -18,40 +19,17 @@ namespace Arma3BEClient.ServiceClient
             _log.Info("Starting");
         }
 
-        private RabbitMessageBus bus = new RabbitMessageBus();
+        private BattleEyeClientWrapper _wrapper;
 
         public void Start()
         {
-
-            //bus.SunscribeMessage<MyMessage>(m => Console.WriteLine(m.Text));
-
-            //using ()
-            {
-                Console.WriteLine("Send 1");
-                bus.PublishMessage(new MyMessage());
-                Console.WriteLine("Send 2");
-                bus.PublishMessage(new MyMessage());
-                Console.WriteLine("Send 3");
-                bus.PublishMessage(new MyMessage());
-                Console.WriteLine("end send");
-            }
+            _wrapper = new BattleEyeClientWrapper(Guid.NewGuid(), IPHelper.GetIPAddress("server2.tehgam.com"), 2302, "teh123", _log);
+            _wrapper.Connect();
         }
 
         public void Stop()
         {
             
-        }
-
-        public class MyMessage
-        {
-            public Guid Id { get; set; }
-            public string Text { get; set; }
-
-            public MyMessage()
-            {
-                Id = Guid.NewGuid();
-                Text = Id.ToString();
-            }
-        }
+        }        
     }
 }

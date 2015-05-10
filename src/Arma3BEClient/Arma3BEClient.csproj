@@ -222,8 +222,8 @@
     </Compile>
     <Compile Include="Helpers\AdminHelper.cs" />
     <Compile Include="Helpers\BanHelper.cs" />
-    <Compile Include="Helpers\IPInfo.cs" />
     <Compile Include="Helpers\ChatHelper.cs" />
+    <Compile Include="Helpers\IPInfo.cs" />
     <Compile Include="Helpers\PlayerHelper.cs" />
     <Compile Include="Helpers\StateHelper.cs" />
     <Compile Include="Helpers\UpdateClientPeriodic.cs" />

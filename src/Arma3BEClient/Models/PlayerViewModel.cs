@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Windows.Input;
 using Arma3BEClient.Commands;
+using Arma3BEClient.Common.Helpers;
 using Arma3BEClient.Helpers;
 using Arma3BEClient.Libs.Context;
 using Arma3BEClient.Libs.ModelCompact;

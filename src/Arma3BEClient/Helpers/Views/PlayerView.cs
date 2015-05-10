@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Arma3BEClient.Annotations;
 using Arma3BEClient.Common.Attributes;
+using Arma3BEClient.Common.Helpers;
 
 namespace Arma3BEClient.Helpers.Views
 {

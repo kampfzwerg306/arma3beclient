@@ -75,6 +75,10 @@
       <Project>{D507E532-7DE6-4028-9DBE-AA76C54CC92A}</Project>
       <Name>Arma3BEClient.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Arma3BEClient.ServiceCore\Arma3BEClient.ServiceCore.csproj">
+      <Project>{688930DB-3C03-4697-A8D6-BC22487E13D2}</Project>
+      <Name>Arma3BEClient.ServiceCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\PostSharp.4.1.13\tools\PostSharp.targets" Condition="Exists('..\packages\PostSharp.4.1.13\tools\PostSharp.targets')" />

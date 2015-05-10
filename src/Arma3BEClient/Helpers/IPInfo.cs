@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using MaxMind.GeoIP2;
 
-namespace Arma3BEClient.Helpers
+namespace Arma3BEClient.Common.Helpers
 {
     public static class IPInfo
     {
@@ -32,25 +32,6 @@ namespace Arma3BEClient.Helpers
                 }
             }
             catch(Exception e)
-            {
-                return string.Empty;
-            }
-        }
-
-        public static string GetIPAddress(string host)
-        {
-            IPAddress ip;
-
-            if (IPAddress.TryParse(host, out ip))
-            {
-                return ip.ToString();
-            }
-            try
-            {
-                var entry = Dns.GetHostEntry(host);
-                return entry.AddressList[0].ToString();
-            }
-            catch
             {
                 return string.Empty;
             }
