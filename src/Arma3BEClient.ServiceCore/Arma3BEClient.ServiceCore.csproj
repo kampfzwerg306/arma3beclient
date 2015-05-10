@@ -46,11 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\Arma3BEClientContext.cs" />
+    <Compile Include="Migrations\201505101032068_2015_05_10.cs" />
+    <Compile Include="Migrations\201505101032068_2015_05_10.Designer.cs">
+      <DependentUpon>201505101032068_2015_05_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arma3BEClient.Libs\Arma3BEClient.Libs.csproj">
+      <Project>{E5240A50-E944-4F50-A353-2E3C9E547447}</Project>
+      <Name>Arma3BEClient.Libs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505101032068_2015_05_10.resx">
+      <DependentUpon>201505101032068_2015_05_10.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
