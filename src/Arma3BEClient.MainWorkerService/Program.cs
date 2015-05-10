@@ -1,23 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.ServiceProcess;
+using System.Text;
+using System.Threading.Tasks;
 using Arma3BEClient.Common.Logging;
-using log4net.Config;
 
-namespace Arma3BEClient.ServiceClient
+namespace Arma3BEClient.MainWorkerService
 {
     static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        static void Main(string[] args)
-        {            
+        static void Main()
+        {
             var log = new Log();
-            MainServiceRunner mainServiceRunner = new MainServiceRunner(log);
+            var mainServiceRunner = new MainWorkerServiceRunner(log);
 
             if (!Environment.UserInteractive)
                 // running as service
-                using (var service = new MainService(mainServiceRunner))
+                using (var service = new MainWorkerService(mainServiceRunner))
                     ServiceBase.Run(service);
             else
             {
@@ -26,9 +29,9 @@ namespace Arma3BEClient.ServiceClient
                 {
                     mainServiceRunner.Start();
                     Console.WriteLine("Press any key to stop...");
-                    Console.ReadKey(true);                    
+                    Console.ReadKey(true);
                     mainServiceRunner.Stop();
-                    
+
                 }
                 catch (Exception e)
                 {
