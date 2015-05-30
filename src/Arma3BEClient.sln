@@ -22,9 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arma3BEClient.Steam", "Arma3BEClient.Steam\Arma3BEClient.Steam.csproj", "{B2948BD4-B413-4E9D-B9ED-41261B0C56DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CCDACF6F-4622-4E17-AA65-BA2D2A7FB5F7}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\packages.config = .nuget\packages.config
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C463E152-940A-4605-A771-CBF015190FBF}"
 EndProject

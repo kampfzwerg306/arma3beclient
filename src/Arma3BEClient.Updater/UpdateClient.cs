@@ -8,12 +8,9 @@ using Arma3BEClient.Updater.Models;
 using BattleNET;
 
 using Admin = Arma3BEClient.Updater.Models.Admin;
-using PostSharp.Patterns.Diagnostics;
-using PostSharp.Extensibility;
 
 namespace Arma3BEClient.Updater
 {
-    [Log("LoggingProfile", AttributeTargetMemberAttributes = MulticastAttributes.Protected | MulticastAttributes.Public)]
     public class UpdateClient : IDisposable
     {
         private readonly string _host;
