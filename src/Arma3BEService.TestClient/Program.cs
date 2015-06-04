@@ -16,12 +16,8 @@ namespace Arma3BEService.TestClient
             Console.ReadLine();
 
             s.Close();
-
-
         }
     }
-
-
 
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
