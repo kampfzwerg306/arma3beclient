@@ -57,7 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\Arma3BEClientContext.cs" />
+    <Compile Include="Context\DbInitializer.cs" />
+    <Compile Include="Context\Arma3BeServiceContext.cs" />
     <Compile Include="Contracts\ITestContract.cs" />
     <Compile Include="ModelCompact\Admin.cs" />
     <Compile Include="ModelCompact\Ban.cs" />

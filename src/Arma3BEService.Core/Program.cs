@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Topshelf;
 
 namespace Arma3BEService.Core
@@ -7,6 +8,8 @@ namespace Arma3BEService.Core
     {
         static void Main()
         {
+            Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
+
             HostFactory.Run(x =>
             {
                 x.Service<BackendRunner>();
