@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="Context\DbInitializer.cs" />
     <Compile Include="Context\Arma3BeServiceContext.cs" />
-    <Compile Include="Contracts\ITestContract.cs" />
+    <Compile Include="Contracts\IArma3ServiceContract.cs" />
     <Compile Include="ModelCompact\Admin.cs" />
     <Compile Include="ModelCompact\Ban.cs" />
     <Compile Include="ModelCompact\ChatLog.cs" />

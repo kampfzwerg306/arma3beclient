@@ -12,7 +12,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Arma3BEService.Lib.ModelCompact
 {
-    public partial class ServerInfo
+    public partial class ServerInfo : Server
     {
         public ServerInfo()
         {
@@ -21,6 +21,24 @@ namespace Arma3BEService.Lib.ModelCompact
             this.Admins = new HashSet<Admin>();
         }
     
+       
+    
+        
+        public virtual ICollection<ChatLog> ChatLog { get; set; }
+
+        public virtual ICollection<Ban> Bans { get; set; }
+
+        public virtual ICollection<Admin> Admins { get; set; }
+
+        public virtual ICollection<PlayerHistory> PlayerHistory { get; set; }
+
+
+        
+    }
+
+
+    public class Server
+    {
         [Key]
         public System.Guid Id { get; set; }
 
@@ -38,17 +56,5 @@ namespace Arma3BEService.Lib.ModelCompact
 
         [Required]
         public bool Active { get; set; }
-    
-        
-        public virtual ICollection<ChatLog> ChatLog { get; set; }
-
-        public virtual ICollection<Ban> Bans { get; set; }
-
-        public virtual ICollection<Admin> Admins { get; set; }
-
-        public virtual ICollection<PlayerHistory> PlayerHistory { get; set; }
-
-
-        
     }
 }

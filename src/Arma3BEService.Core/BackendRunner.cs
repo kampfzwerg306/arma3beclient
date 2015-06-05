@@ -13,7 +13,7 @@ namespace Arma3BEService.Core
         public BackendRunner()
         {
             _log = new Log();
-            _serviceHost = new ServiceHost(typeof(TestService));
+            _serviceHost = new ServiceHost(typeof(Arma3WcfService));
         }
         
         public bool Start(HostControl hostControl)
