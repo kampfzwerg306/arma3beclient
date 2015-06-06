@@ -15,6 +15,7 @@ namespace Arma3BEService.Core
                 x.Service<BackendRunner>();
                 x.RunAsLocalSystem();
                 x.StartAutomatically();
+                x.EnableServiceRecovery(s=> s.RestartService(0).OnCrashOnly());
                 
                 x.SetDescription("Arma3BEService");
                 x.SetDisplayName("Arma3BEService");

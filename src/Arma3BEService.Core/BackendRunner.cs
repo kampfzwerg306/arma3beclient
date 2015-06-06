@@ -1,5 +1,7 @@
 ﻿using System.ServiceModel;
+using System.Threading;
 using Arma3BEClient.Common.Logging;
+using Arma3BEService.Lib.Contracts;
 using Arma3BEService.Service;
 using Topshelf;
 
@@ -9,6 +11,7 @@ namespace Arma3BEService.Core
     {
         private readonly ILog _log;
         private ServiceHost _serviceHost;
+        private Thread workerThread;
 
         public BackendRunner()
         {
@@ -20,6 +23,11 @@ namespace Arma3BEService.Core
         {
             _log.Info("start service");
             _serviceHost.Open();
+           
+            var context = OperationContext.Current.GetCallbackChannel<IArma3ServiceCallbackContract>();
+            
+            workerThread = new Thread(x => { new MultiServerWorker(_log).Run(); });
+            workerThread.Start();
             return true;
         }
 

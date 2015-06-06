@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Microsoft.ServiceModel.Arma3BEService" elementFormDefault="qualified" targetNamespace="http://Microsoft.ServiceModel.Arma3BEService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" />
+  <xs:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models" />
+  <xs:element name="AddOrUpdateServer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" minOccurs="0" name="server" nillable="true" type="q1:Server" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddOrUpdateServerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" minOccurs="0" name="AddOrUpdateServerResult" nillable="true" type="q2:ServerBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" minOccurs="0" name="GetServersResult" nillable="true" type="q3:ArrayOfServerBase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models" minOccurs="0" name="message" nillable="true" type="q4:ChatMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

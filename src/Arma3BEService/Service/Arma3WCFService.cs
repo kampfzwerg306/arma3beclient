@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
 using Arma3BEClient.Common.Extensions;
 using Arma3BEClient.Common.Logging;
 using Arma3BEService.Lib.Context;
@@ -10,18 +11,19 @@ namespace Arma3BEService.Service
 {
     public class Arma3WcfService : IArma3ServiceContract
     {
-        public Server AddOrUpdateServer(Server server)
-        {
+        private ILog log = new Log();
 
+        public ServerBase AddOrUpdateServer(Server server)
+        {
             if (server.Id == Guid.Empty)
             {
                 server.Id = Guid.NewGuid();
 
                 using (var dc = new Arma3BeServiceContext())
                 {
-                    var res = dc.ServerInfo.Add(server.Map<ServerInfo>()).Map<Server>();
+                    var res = dc.ServerInfo.Add(server.Map<ServerInfo>()).Map<ServerBase>();
                     dc.SaveChanges();
-
+                    Interrupt();
                     return res;
                 }
             }
@@ -36,18 +38,30 @@ namespace Arma3BEService.Service
                     s.Active = server.Active;
                     s.Port = server.Port;
                     dc.SaveChanges();
-
-                    return s.Map<Server>();
+                    Interrupt();
+                    return s.Map<ServerBase>();
                 }
             }
+            
         }
 
-        public Server[] GetServers()
+        public ServerBase[] GetServers()
         {
             using (var dc = new Arma3BeServiceContext())
             {
-                return dc.ServerInfo.Cast<Server>().ToArray();
+                Interrupt();
+                return dc.ServerInfo.OrderBy(x => x.Name).ToArray().Select(x => x.Map<ServerBase>()).ToArray();
             }
+        }
+
+        private void Interrupt()
+        {
+            ThreadPool.QueueUserWorkItem((x) =>
+            {
+                Thread.Sleep(1000);
+                log.Debug("interrupting");
+                Environment.Exit(1);
+            });
         }
     }
 }

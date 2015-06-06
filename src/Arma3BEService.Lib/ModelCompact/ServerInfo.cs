@@ -20,10 +20,10 @@ namespace Arma3BEService.Lib.ModelCompact
             this.PlayerHistory = new HashSet<PlayerHistory>();
             this.Admins = new HashSet<Admin>();
         }
-    
-       
-    
-        
+
+
+
+
         public virtual ICollection<ChatLog> ChatLog { get; set; }
 
         public virtual ICollection<Ban> Bans { get; set; }
@@ -31,17 +31,10 @@ namespace Arma3BEService.Lib.ModelCompact
         public virtual ICollection<Admin> Admins { get; set; }
 
         public virtual ICollection<PlayerHistory> PlayerHistory { get; set; }
-
-
-        
     }
 
-
-    public class Server
+    public class Server : ServerBase
     {
-        [Key]
-        public System.Guid Id { get; set; }
-
         [Required]
         public string Host { get; set; }
 
@@ -50,6 +43,12 @@ namespace Arma3BEService.Lib.ModelCompact
 
         [Required]
         public string Password { get; set; }
+    }
+
+    public class ServerBase
+    {
+        [Key]
+        public System.Guid Id { get; set; }
 
         [Required]
         public string Name { get; set; }
