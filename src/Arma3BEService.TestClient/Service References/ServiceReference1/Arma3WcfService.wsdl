@@ -259,7 +259,7 @@
       <wsa10:EndpointReference>
         <wsa10:Address>http://localhost:8000/Arma3WCFService/service</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Spn>host/note</Spn>
+          <Upn>MEGA\Артём</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

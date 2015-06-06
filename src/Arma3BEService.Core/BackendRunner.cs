@@ -24,7 +24,7 @@ namespace Arma3BEService.Core
             _log.Info("start service");
             _serviceHost.Open();
            
-            var context = OperationContext.Current.GetCallbackChannel<IArma3ServiceCallbackContract>();
+            //var context = OperationContext.Current.GetCallbackChannel<IArma3ServiceCallbackContract>();
             
             workerThread = new Thread(x => { new MultiServerWorker(_log).Run(); });
             workerThread.Start();

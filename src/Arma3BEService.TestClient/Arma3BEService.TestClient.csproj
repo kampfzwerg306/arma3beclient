@@ -57,6 +57,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Properties\DataSources\Arma3BEService.Lib.ModelCompact.ServerBase.datasource" />
+    <None Include="Service References\ServiceReference1\Arma3BEService.TestClient.ServiceReference1.ServerBase.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\ServiceReference1\Arma3WcfService.wsdl" />
     <None Include="Service References\ServiceReference1\service.wsdl" />
     <None Include="Service References\ServiceReference1\service.xsd">
