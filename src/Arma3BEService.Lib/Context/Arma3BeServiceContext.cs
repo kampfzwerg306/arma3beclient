@@ -1,4 +1,4 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 using Arma3BEService.Lib.ModelCompact;
 
 namespace Arma3BEService.Lib.Context
@@ -19,7 +19,7 @@ namespace Arma3BEService.Lib.Context
 
 
         public Arma3BeServiceContext()
-            : base("name=Arma3BEClientEntities")
+            : base("name=Arma3BeServiceEntities")
         {
           
         }
@@ -31,13 +31,4 @@ namespace Arma3BEService.Lib.Context
                 db.Database.Initialize(false);
         }
     }
-
-
-    class DbInitializer : CreateDatabaseIfNotExists<Arma3BeServiceContext>
-    {
-        public DbInitializer()
-        {
-            
-        }
-    } 
 }

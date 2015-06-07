@@ -57,8 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\Arma3BEClientContext.cs" />
-    <Compile Include="Contracts\ITestContract.cs" />
+    <Compile Include="Context\DbInitializer.cs" />
+    <Compile Include="Context\Arma3BeServiceContext.cs" />
+    <Compile Include="Contracts\IArma3ServiceContract.cs" />
     <Compile Include="ModelCompact\Admin.cs" />
     <Compile Include="ModelCompact\Ban.cs" />
     <Compile Include="ModelCompact\ChatLog.cs" />
@@ -75,6 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arma3BEClient.Updater\Arma3BEClient.Updater.csproj">
+      <Project>{0BCA3884-712A-4A1F-B5CD-4346671AF18B}</Project>
+      <Name>Arma3BEClient.Updater</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

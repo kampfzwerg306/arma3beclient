@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://Microsoft.ServiceModel.Arma3BEService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://Microsoft.ServiceModel.Arma3BEService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Microsoft.ServiceModel.Arma3BEService/Imports">
+      <xsd:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd0" namespace="http://Microsoft.ServiceModel.Arma3BEService" />
+      <xsd:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" />
+      <xsd:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IArma3ServiceContract_AddOrUpdateServer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateServer" />
+  </wsdl:message>
+  <wsdl:message name="IArma3ServiceContract_AddOrUpdateServer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddOrUpdateServerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArma3ServiceContract_GetServers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServers" />
+  </wsdl:message>
+  <wsdl:message name="IArma3ServiceContract_GetServers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IArma3ServiceContract_Message_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:Message" />
+  </wsdl:message>
+  <wsdl:portType msc:usingSession="true" name="IArma3ServiceContract">
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddOrUpdateServer">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/AddOrUpdateServer" message="tns:IArma3ServiceContract_AddOrUpdateServer_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/AddOrUpdateServerResponse" message="tns:IArma3ServiceContract_AddOrUpdateServer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="GetServers">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/GetServers" message="tns:IArma3ServiceContract_GetServers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/GetServersResponse" message="tns:IArma3ServiceContract_GetServers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Message">
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/Message" message="tns:IArma3ServiceContract_Message_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
