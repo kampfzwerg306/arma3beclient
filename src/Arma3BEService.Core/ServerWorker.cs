@@ -1,8 +1,12 @@
-﻿using System.ServiceModel;
+﻿using System;
+using System.ServiceModel;
+using System.Threading;
 using Arma3BEClient.Common;
 using Arma3BEClient.Common.Helpers;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Updater;
+using Arma3BEClient.Updater.Models;
+using Arma3BEService.Core.SelfServiceReference;
 using Arma3BEService.Lib.Contracts;
 using Arma3BEService.Lib.ModelCompact;
 
@@ -13,9 +17,13 @@ namespace Arma3BEService.Core
         private readonly ILog _log;
         private readonly UpdateClient _client;
 
+        private readonly SelfServiceReference.Arma3ServiceContractClient Arma3ServiceContractClient = new Arma3ServiceContractClient(new InstanceContext(new Callback()));
+
         public ServerWorker(ServerInfo serverInfo, ILog log)
         {
             _log = log;
+
+
             var ip = IPHelper.GetIPAddress(serverInfo.Host);
             _client = new UpdateClient(ip, serverInfo.Port, serverInfo.Password, log);
 
@@ -27,9 +35,8 @@ namespace Arma3BEService.Core
         {
             _log.Info(e.Message);
 
-            //var context = OperationContext.Current.GetCallbackChannel<IArma3ServiceCallbackContract>();
-            //context.Message(e);
-
+            if (Arma3ServiceContractClient.State == CommunicationState.Faulted) return;
+            Arma3ServiceContractClient.SendChatMessage(e);
         }
 
         public void Run()
@@ -44,6 +51,14 @@ namespace Arma3BEService.Core
 
         protected override void DisposeUnManagedResources()
         {
+        }
+
+
+        public class Callback : SelfServiceReference.IArma3ServiceContractCallback
+        {
+            public void Message(ChatMessage message1)
+            {
+            }
         }
     }
 }

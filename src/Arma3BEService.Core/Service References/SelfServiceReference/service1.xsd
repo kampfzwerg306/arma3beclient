@@ -2,16 +2,6 @@
 <xs:schema xmlns:tns="http://Microsoft.ServiceModel.Arma3BEService" elementFormDefault="qualified" targetNamespace="http://Microsoft.ServiceModel.Arma3BEService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models" />
   <xs:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" />
-  <xs:element name="Join">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="JoinResponse">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
   <xs:element name="SendChatMessage">
     <xs:complexType>
       <xs:sequence>

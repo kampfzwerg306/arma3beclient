@@ -34,7 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Arma3BEService.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -74,12 +73,6 @@
     <None Include="Service References\ServiceReference1\service3.xsd">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Arma3BEService.Lib\Arma3BEService.Libs.csproj">
-      <Project>{2fcbacb4-d65f-4580-9ab1-141413771713}</Project>
-      <Name>Arma3BEService.Libs</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

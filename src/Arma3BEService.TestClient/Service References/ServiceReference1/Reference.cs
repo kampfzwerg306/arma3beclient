@@ -15,6 +15,67 @@ namespace Arma3BEService.TestClient.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ChatMessage", Namespace="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models")]
+    [System.SerializableAttribute()]
+    public partial class ChatMessage : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ServerBase", Namespace="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact")]
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Arma3BEService.TestClient.ServiceReference1.Server))]
@@ -146,70 +207,25 @@ namespace Arma3BEService.TestClient.ServiceReference1 {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ChatMessage", Namespace="http://schemas.datacontract.org/2004/07/Arma3BEClient.Updater.Models")]
-    [System.SerializableAttribute()]
-    public partial class ChatMessage : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
-            get {
-                return this.MessageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Arma3BEService", ConfigurationName="ServiceReference1.IArma3ServiceContract", CallbackContract=typeof(Arma3BEService.TestClient.ServiceReference1.IArma3ServiceContractCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IArma3ServiceContract {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/Join", ReplyAction="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/JoinResponse")]
+        void Join();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/Join", ReplyAction="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/JoinResponse")]
+        System.Threading.Tasks.Task JoinAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessag" +
+            "e", ReplyAction="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessag" +
+            "eResponse")]
+        int SendChatMessage(Arma3BEService.TestClient.ServiceReference1.ChatMessage message);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessag" +
+            "e", ReplyAction="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessag" +
+            "eResponse")]
+        System.Threading.Tasks.Task<int> SendChatMessageAsync(Arma3BEService.TestClient.ServiceReference1.ChatMessage message);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/AddOrUpdateSer" +
             "ver", ReplyAction="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/AddOrUpdateSer" +
@@ -263,6 +279,22 @@ namespace Arma3BEService.TestClient.ServiceReference1 {
         
         public Arma3ServiceContractClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(callbackInstance, binding, remoteAddress) {
+        }
+        
+        public void Join() {
+            base.Channel.Join();
+        }
+        
+        public System.Threading.Tasks.Task JoinAsync() {
+            return base.Channel.JoinAsync();
+        }
+        
+        public int SendChatMessage(Arma3BEService.TestClient.ServiceReference1.ChatMessage message) {
+            return base.Channel.SendChatMessage(message);
+        }
+        
+        public System.Threading.Tasks.Task<int> SendChatMessageAsync(Arma3BEService.TestClient.ServiceReference1.ChatMessage message) {
+            return base.Channel.SendChatMessageAsync(message);
         }
         
         public Arma3BEService.TestClient.ServiceReference1.ServerBase AddOrUpdateServer(Arma3BEService.TestClient.ServiceReference1.Server server) {

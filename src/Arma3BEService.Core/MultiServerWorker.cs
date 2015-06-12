@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ServiceModel.Security.Tokens;
 using System.Threading;
 using Arma3BEClient.Common.Logging;
 using Arma3BEService.Lib.Context;
-using Arma3BEService.Lib.Contracts;
 
 namespace Arma3BEService.Core
 {
