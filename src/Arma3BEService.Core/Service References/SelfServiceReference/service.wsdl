@@ -8,12 +8,6 @@
       <xsd:import schemaLocation="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Arma3BEService.Lib.ModelCompact" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IArma3ServiceContract_Join_InputMessage">
-    <wsdl:part name="parameters" element="tns:Join" />
-  </wsdl:message>
-  <wsdl:message name="IArma3ServiceContract_Join_OutputMessage">
-    <wsdl:part name="parameters" element="tns:JoinResponse" />
-  </wsdl:message>
   <wsdl:message name="IArma3ServiceContract_SendChatMessage_InputMessage">
     <wsdl:part name="parameters" element="tns:SendChatMessage" />
   </wsdl:message>
@@ -36,10 +30,6 @@
     <wsdl:part name="parameters" element="tns:Message" />
   </wsdl:message>
   <wsdl:portType msc:usingSession="true" name="IArma3ServiceContract">
-    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="Join">
-      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/Join" message="tns:IArma3ServiceContract_Join_InputMessage" />
-      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/JoinResponse" message="tns:IArma3ServiceContract_Join_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="SendChatMessage">
       <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessage" message="tns:IArma3ServiceContract_SendChatMessage_InputMessage" />
       <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Arma3BEService/IArma3ServiceContract/SendChatMessageResponse" message="tns:IArma3ServiceContract_SendChatMessage_OutputMessage" />

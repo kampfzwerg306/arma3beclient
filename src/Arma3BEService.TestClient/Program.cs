@@ -1,7 +1,6 @@
 ﻿using System;
 using System.ServiceModel;
-using Arma3BEService.Lib.Contracts;
-using Arma3BEService.Lib.ModelCompact;
+using System.Threading;
 using Arma3BEService.TestClient.ServiceReference1;
 
 
@@ -16,9 +15,15 @@ namespace Arma3BEService.TestClient
             var s = new ServiceReference1.Arma3ServiceContractClient(new InstanceContext(new Callback()));
 
             var str = string.Empty;
+            s.Join();
 
-            while ((str = Console.ReadLine()) != "exit")
+            while (true)
             {
+                Thread.Sleep(1000);
+
+
+                //s.SendChatMessage(new ChatMessage(){Date = DateTime.Now, Message = "asdasd"});
+
                 //if (s.State == CommunicationState.Faulted)
                 //{
                 //    //s.Close();

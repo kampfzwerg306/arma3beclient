@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Threading;
 using Arma3BEClient.Common.Extensions;
 using Arma3BEClient.Common.Logging;
+using Arma3BEClient.Updater.Models;
 using Arma3BEService.Lib.Context;
 using Arma3BEService.Lib.Contracts;
 using Arma3BEService.Lib.ModelCompact;
@@ -12,6 +15,8 @@ namespace Arma3BEService.Service
     public class Arma3WcfService : IArma3ServiceContract
     {
         private ILog log = new Log();
+
+        private static List<IArma3ServiceCallbackContract> _callbackList = new List<IArma3ServiceCallbackContract>();
 
         public ServerBase AddOrUpdateServer(Server server)
         {
@@ -23,7 +28,6 @@ namespace Arma3BEService.Service
                 {
                     var res = dc.ServerInfo.Add(server.Map<ServerInfo>()).Map<ServerBase>();
                     dc.SaveChanges();
-                    Interrupt();
                     return res;
                 }
             }
@@ -38,7 +42,6 @@ namespace Arma3BEService.Service
                     s.Active = server.Active;
                     s.Port = server.Port;
                     dc.SaveChanges();
-                    Interrupt();
                     return s.Map<ServerBase>();
                 }
             }
@@ -49,8 +52,38 @@ namespace Arma3BEService.Service
         {
             using (var dc = new Arma3BeServiceContext())
             {
-                Interrupt();
                 return dc.ServerInfo.OrderBy(x => x.Name).ToArray().Select(x => x.Map<ServerBase>()).ToArray();
+            }
+        }
+
+        public void Join()
+        {
+            IArma3ServiceCallbackContract registeredUser = Callback;
+
+            if (!_callbackList.Contains(registeredUser))
+            {
+                _callbackList.Add(registeredUser);
+            }     
+        }
+
+        public int SendChatMessage(ChatMessage message)
+        {
+            //Callback.Message(message);
+
+
+            _callbackList.ForEach(
+                delegate(IArma3ServiceCallbackContract callback)
+                { callback.Message(message); });
+
+            return 0;
+        }
+
+
+        IArma3ServiceCallbackContract Callback
+        {
+            get
+            {
+                return OperationContext.Current.GetCallbackChannel<IArma3ServiceCallbackContract>();
             }
         }
 

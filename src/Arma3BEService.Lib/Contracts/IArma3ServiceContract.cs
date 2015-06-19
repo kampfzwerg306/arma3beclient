@@ -8,6 +8,12 @@ namespace Arma3BEService.Lib.Contracts
     public interface IArma3ServiceContract
     {
         [OperationContract]
+        void Join();
+
+        [OperationContract]
+        int SendChatMessage(ChatMessage message);
+
+        [OperationContract]
         ServerBase AddOrUpdateServer(Server server);
 
 

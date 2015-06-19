@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2bfd800a-afb1-4cba-a73a-95eeec926050" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e0deb116-aea1-42eb-b6a5-95062c97b500" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,13 +22,13 @@
     <MetadataSource Address="http://localhost:8000/Arma3WCFService/service" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="f2d836d1-2f09-4947-9698-1003d0f81e1d" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" />
-    <MetadataFile FileName="Arma3WcfService.wsdl" MetadataType="Wsdl" ID="a3d3d053-44c8-4c2e-93bb-14fab8441e01" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?wsdl" />
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="701067fd-0d2f-45b3-8b9a-f53d059bab68" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?wsdl=wsdl0" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="b270b48f-69d4-4bd7-98d9-fc28be814b62" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd0" />
-    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="60d0b0f5-e919-40da-8ef3-3a669a5fc0a8" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?disco" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="6762892d-8466-4e82-b4e8-fbd037c4a5e3" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd2" />
-    <MetadataFile FileName="service3.xsd" MetadataType="Schema" ID="f1f3f4ae-e476-4f35-b9c7-8ed591122027" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd1" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="629c2e52-e6de-4fa3-ac83-286822508639" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd1" />
+    <MetadataFile FileName="Arma3WcfService.wsdl" MetadataType="Wsdl" ID="bd0a3143-0c61-419d-b4af-e4a3e9211d2f" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?wsdl" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="29c1bfbe-e545-48ee-8ce9-fbcf8e541284" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?wsdl=wsdl0" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6e5405fa-b85c-40ed-84ee-5e726ed3566a" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd0" />
+    <MetadataFile FileName="service.disco" MetadataType="Disco" ID="0fb57eef-408d-4afc-bf2f-c4e0cab5cd20" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?disco" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="ebb4510f-8e4e-4d76-9c4f-3fb39a75392a" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd2" />
+    <MetadataFile FileName="service3.xsd" MetadataType="Schema" ID="882dff41-8f1d-400a-a6ac-8611ac98c24d" SourceId="1" SourceUrl="http://localhost:8000/Arma3WCFService/service?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
