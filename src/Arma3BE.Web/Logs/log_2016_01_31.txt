@@ -138,3 +138,523 @@ messageId:256
 2016-01-31 02:07:04,371 [13] INFO  unknown Account Login ::1
 2016-01-31 02:07:36,683 [9] INFO  unknown Account Login ::1
 2016-01-31 02:07:37,874 [11] INFO  unknown Account Login ::1
+2016-01-31 02:31:19,275 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:31:19,286 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:31:19,289 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:31:19,453 [105] INFO  unknown Account Login ::1
+2016-01-31 02:31:31,858 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:31:31,866 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:31:31,868 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:31:31,997 [99] INFO  unknown Account Login ::1
+2016-01-31 02:32:21,009 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:32:21,018 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:32:21,020 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:32:21,177 [99] INFO  unknown Account Login ::1
+2016-01-31 02:32:23,464 [113] INFO  unknown Account Login ::1
+2016-01-31 02:32:23,739 [101] INFO  unknown Account Login ::1
+2016-01-31 02:32:24,776 [113] INFO  unknown Account Login ::1
+2016-01-31 02:33:21,010 [98] INFO  RECREATE CLIENT FOR 46.149.73.255:2302 WITH LAST RECEIVED 00:00:59.9929963
+2016-01-31 02:33:21,011 [98] INFO  Release 46.149.73.255:2302
+2016-01-31 02:33:21,013 [98] INFO  ThreadSafeBattleEyeClient DisposeManagedResources
+2016-01-31 02:33:21,013 [98] INFO  Init 46.149.73.255:2302
+2016-01-31 02:33:21,013 [98] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:33:22,028 [105] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #1 (94.181.44.100:59589) logged in
+]
+2016-01-31 02:33:36,056 [100] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Player #0 [FoS]Aleksandr (46.146.145.207:2304) connected
+]
+2016-01-31 02:33:37,056 [99] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Player #0 [FoS]Aleksandr - GUID: 3c4956b76990772939094d089c9b7f9c (unverified)
+]
+2016-01-31 02:33:38,057 [114] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Verified GUID (3c4956b76990772939094d089c9b7f9c) of player #0 [FoS]Aleksandr
+]
+2016-01-31 02:33:42,073 [105] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Player #6 IceSemper (109.120.28.195:2304) connected
+]
+2016-01-31 02:33:43,073 [91] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Player #6 IceSemper - GUID: 21b52f31435522b611f54777743c96cb (unverified)
+]
+2016-01-31 02:33:47,087 [109] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Verified GUID (21b52f31435522b611f54777743c96cb) of player #6 IceSemper
+]
+2016-01-31 02:35:25,354 [81] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Akronix: инженеры есть?
+]
+2016-01-31 02:36:11,697 [73] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) expy: метку на него плиз старйде
+]
+2016-01-31 02:36:47,790 [67] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Raymus: ОТХОДИМ
+]
+2016-01-31 02:36:52,792 [99] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Raymus: взрываю
+]
+2016-01-31 02:36:55,805 [81] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) S.W.A.T: спс
+]
+2016-01-31 02:37:13,866 [81] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Akronix: alex
+]
+2016-01-31 02:37:20,882 [58] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Akronix: ты чинить умеешь?
+]
+2016-01-31 02:37:46,931 [69] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) IceSemper: кто на тару
+]
+2016-01-31 02:37:52,935 [99] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) IceSemper: 124 высота
+]
+2016-01-31 02:39:31,219 [42] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Raymus: танк с обратной стороны 
+]
+2016-01-31 02:39:37,242 [40] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Raymus: замак
+]
+2016-01-31 02:39:55,319 [50] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Raymus: танк под вами
+]
+2016-01-31 03:28:24,527 [5] INFO  unknown Account Login ::1
+2016-01-31 03:28:26,394 [10] INFO  unknown Account Login ::1
+2016-01-31 03:28:27,327 [7] INFO  unknown Account Login ::1
+2016-01-31 03:28:27,382 [5] INFO  Admin Home Index ::1
+2016-01-31 03:28:27,383 [5] INFO  Admin call Index
+2016-01-31 03:29:01,758 [8] INFO  Admin Home Index ::1
+2016-01-31 03:29:01,774 [8] INFO  Admin call Index
+2016-01-31 03:29:26,114 [8] INFO  Admin Home Index ::1
+2016-01-31 03:29:26,130 [8] INFO  Admin call Index
+2016-01-31 03:29:59,202 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 03:29:59,210 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 03:29:59,212 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:29:59,332 [7] INFO  Admin Home Index ::1
+2016-01-31 03:29:59,340 [7] INFO  Admin call Index
+2016-01-31 03:30:02,948 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 03:30:02,956 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 03:30:02,958 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:31:04,915 [17] INFO  RECREATE CLIENT FOR 46.149.73.255:2302 WITH LAST RECEIVED 00:01:01.9595265
+2016-01-31 03:31:04,915 [17] INFO  Release 46.149.73.255:2302
+2016-01-31 03:31:04,917 [17] INFO  ThreadSafeBattleEyeClient DisposeManagedResources
+2016-01-31 03:31:04,917 [17] INFO  Init 46.149.73.255:2302
+2016-01-31 03:31:04,917 [17] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:31:05,934 [5] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #5 (94.181.44.100:54179) logged in
+]
+2016-01-31 03:32:10,761 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 03:32:10,771 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 03:32:10,772 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:32:10,774 [1] INFO  46.149.73.255:2302 Update client - connect
+2016-01-31 03:32:10,932 [7] INFO  Admin Home Index ::1
+2016-01-31 03:32:10,940 [7] INFO  Admin call Index
+2016-01-31 03:32:11,784 [9] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #6 (94.181.44.100:51303) logged in
+]
+2016-01-31 03:32:15,089 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 03:32:15,098 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 03:32:15,099 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:32:15,101 [1] INFO  46.149.73.255:2302 Update client - connect
+2016-01-31 03:32:27,775 [5] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #7 (94.181.44.100:53143) logged in
+]
+2016-01-31 03:32:27,841 [9] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:32:27,842 [9] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:32:28,757 [5] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #7 (94.181.44.100:53143) logged in
+]
+2016-01-31 03:32:28,759 [10] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:32:29,758 [10] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #7 (94.181.44.100:53143) logged in
+]
+2016-01-31 03:32:31,991 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 03:32:32,000 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 03:32:32,002 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 03:32:32,003 [1] INFO  46.149.73.255:2302 Update client - connect
+2016-01-31 03:32:37,137 [8] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #5 (94.181.44.100:53208) logged in
+]
+2016-01-31 03:32:38,133 [9] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #5 (94.181.44.100:53208) logged in
+]
+2016-01-31 03:32:39,134 [8] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #5 (94.181.44.100:53208) logged in
+]
+2016-01-31 03:32:42,610 [13] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:32:42,611 [13] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:32:43,179 [5] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:32:44,349 [8] INFO  message [
+server ip: 46.149.73.255
+messageId:2
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   15   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     16   9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    62   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   16   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  47   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:33:10,470 [13] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:33:10,470 [13] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:33:19,301 [22] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:33:22,167 [17] INFO  message [
+server ip: 46.149.73.255
+messageId:9
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   15   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    62   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    15   cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  32   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      46   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:33:33,529 [22] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:33:33,529 [22] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:33:34,539 [17] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:33:35,646 [24] INFO  message [
+server ip: 46.149.73.255
+messageId:12
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   15   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     16   9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  46   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  16   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:34:05,633 [22] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) Forest: targa, в здании рядом с тобой
+]
+2016-01-31 03:34:11,637 [18] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) Forest: точно был пехотинец
+]
+2016-01-31 03:34:20,679 [17] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: чувак на квадрике
+]
+2016-01-31 03:34:22,680 [16] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: бл
+]
+2016-01-31 03:34:38,728 [22] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: маст ди подними близ
+]
+2016-01-31 03:34:39,742 [22] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) Forest: во дворе через дорогу есть ещё один
+]
+2016-01-31 03:34:40,743 [19] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: плиз
+]
+2016-01-31 03:35:25,882 [24] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: маст ди подними меня плиз
+]
+2016-01-31 03:35:31,887 [18] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: спасибо
+]
+2016-01-31 03:36:45,162 [18] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:36:45,162 [18] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:36:46,161 [28] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:36:47,303 [24] INFO  message [
+server ip: 46.149.73.255
+messageId:46
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   16   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     15   9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    47   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   15   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      47   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:36:50,576 [32] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:36:50,576 [32] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:36:51,176 [28] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:36:52,308 [24] INFO  message [
+server ip: 46.149.73.255
+messageId:48
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   32   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    47   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    15   cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   32   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      47   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:37:28,090 [55] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:37:28,090 [55] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:37:28,273 [28] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:37:29,408 [45] INFO  message [
+server ip: 46.149.73.255
+messageId:56
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   16   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  63   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    47   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       16   c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    16   cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      47   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:37:40,462 [39] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:37:40,462 [39] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:37:41,296 [18] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:37:42,426 [46] INFO  message [
+server ip: 46.149.73.255
+messageId:59
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   31   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     15   9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   47   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      46   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  47   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:37:45,881 [47] INFO  Admin Home Index ::1
+2016-01-31 03:37:45,882 [47] INFO  Admin call Index
+2016-01-31 03:37:51,226 [53] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:37:51,226 [53] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:37:51,323 [24] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:37:52,454 [24] INFO  message [
+server ip: 46.149.73.255
+messageId:61
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   15   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  46   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   46   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  32   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:37:52,565 [32] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:37:52,565 [32] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:37:53,325 [50] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:37:54,468 [32] INFO  message [
+server ip: 46.149.73.255
+messageId:62
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   31   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     16   9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  46   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   46   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  32   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  31   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:38:01,947 [22] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:38:01,947 [22] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:38:02,339 [50] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:38:03,419 [44] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:38:03,419 [44] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:38:03,453 [56] INFO  message [
+server ip: 46.149.73.255
+messageId:64
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   16   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  46   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   46   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  47   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:38:04,124 [50] INFO  SERVER: 46.149.73.255:2302 - TRY TO RCON COMMAND Players WITH PARAMS 
+2016-01-31 03:38:04,124 [50] INFO  ThreadSafeBattleEyeClient Saving Players WITH 
+2016-01-31 03:38:04,353 [28] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:38:05,474 [45] INFO  message [
+server ip: 46.149.73.255
+messageId:65
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   16   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  46   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       0    c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    0    cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   46   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      31   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  47   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:38:05,474 [53] INFO  ThreadSafeBattleEyeClient Sending Players WITH 
+2016-01-31 03:38:06,474 [50] INFO  message [
+server ip: 46.149.73.255
+messageId:66
+Players on server:
+[#] [IP Address]:[Port] [Ping] [GUID] [Name]
+--------------------------------------------------
+0   46.146.145.207:2304   16   3c4956b76990772939094d089c9b7f9c(OK) [FoS]Aleksandr
+1   90.154.77.84:2304     0    9d2005c08273d12eb0486442c9d6933c(OK) S.W.A.T
+3   212.74.196.125:15630  62   702a1e62efb235a13dcf3da29eadc4b5(OK) Must_Die
+4   46.98.121.255:2304    46   e3807f6355d182b3ecb7eb7cf1540d40(OK) Iteron
+5   37.1.24.89:2304       15   c0cf1743808b045068ade568f392f369(OK) Triada
+9   46.39.231.27:22329    15   cb9379b85f18d422772b8197d0364cf0(OK) AGLARON
+12  176.15.116.137:2304   31   9e52b48ffa6c8aa399a6f2a53cc41869(OK) keiZ
+13  87.117.12.214:39468   46   806d23b69b639f16af053c3765d4da04(OK) Forest
+21  134.249.138.199:2304  31   a023abf6919f377652d103d0f77149e4(OK) targa
+23  2.93.86.166:2304      46   b9422d2dca8ce301132d41867782bf3c(OK) Bax_i_Noarta_netu
+30  178.219.243.166:2304  47   48d5b92e1403b91b6543a0d8617f132d(OK) ToxaBes
+(11 players in total)
+]
+2016-01-31 03:38:18,385 [18] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: НА ТАНКЕ КТО В ГОРОДЕ ПРОСТРЕЛИ СТЕНЫ В ДОМЕ ТАМ ПЕХИ
+]
+2016-01-31 03:38:25,415 [54] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) keiZ: НАПРОТИВ МОЕГО ТРУПА
+]
+2016-01-31 03:39:01,523 [56] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) Triada: пока
+]

@@ -12,7 +12,14 @@ namespace Arma3BE.Server.State
         private volatile Player[] _players;
         private BEServer _server;
 
-        public IEnumerable<Player> Players => _players;
+        public IEnumerable<Player> Players
+        {
+            get
+            {
+                _server.SendCommand(CommandType.Players);
+                return _players;
+            }
+        }
 
         public StateServer(BEServer server)
         {
@@ -20,6 +27,8 @@ namespace Arma3BE.Server.State
 
             _server.PlayerHandler += _server_PlayerHandler;
             _server.ChatMessageHandler += _server_ChatMessageHandler;
+
+            server.Connect();
         }
 
         private void _server_ChatMessageHandler(object sender, ChatMessage e)

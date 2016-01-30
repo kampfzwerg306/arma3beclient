@@ -12,7 +12,8 @@ namespace Arma3BE.Web.Controllers
         public ActionResult Index()
         {
             var model = new ServerModel();
-            model.Players = MvcApplication.StateServer.Players.ToList();
+
+            model.Players = MvcApplication.StateServer.Players?.ToList();
             return View(model);
         }
     }
