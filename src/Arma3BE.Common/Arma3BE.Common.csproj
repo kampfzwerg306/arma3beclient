@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Attributes\ShowInUIAttribute.cs" />
     <Compile Include="Core\DisposeObject.cs" />
+    <Compile Include="IPInfo.cs" />
     <Compile Include="Logging\ILog.cs" />
     <Compile Include="Logging\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

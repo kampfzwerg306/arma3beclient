@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Arma3BE.Server.Decorators;
-using Arma3BE.Server.Messaging;
 using Arma3BE.Server.Models;
 using Arma3BEClient.Common.Core;
-using BattleNET;
 
 namespace Arma3BE.Server.State
 {
     public class StateServer : DisposeObject
     {
-        private BEServer _server;
+        private readonly object _lock = new object();
+        private readonly Queue<ChatMessage> _messages = new Queue<ChatMessage>();
         private volatile Player[] _players;
-        private Queue<ChatMessage> _messages = new Queue<ChatMessage>();
+        private BEServer _server;
+
+        public IEnumerable<Player> Players => _players;
 
         public StateServer(BEServer server)
         {
@@ -36,7 +34,6 @@ namespace Arma3BE.Server.State
             _players = e.Data.ToArray();
         }
 
-        private object _lock = new object();
         protected override void DisposeManagedResources()
         {
             if (_server != null)
@@ -45,7 +42,6 @@ namespace Arma3BE.Server.State
                 {
                     if (_server != null)
                     {
-
                         _server.PlayerHandler -= _server_PlayerHandler;
                         _server.ChatMessageHandler -= _server_ChatMessageHandler;
 

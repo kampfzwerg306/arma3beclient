@@ -30,6 +30,8 @@ namespace Arma3BE.Web
 
         protected void Application_Error()
         {
+            var e = Server.GetLastError();
+            var t = 10;
         }
 
         public static StateServer StateServer;

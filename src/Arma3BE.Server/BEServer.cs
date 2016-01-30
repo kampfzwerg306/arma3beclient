@@ -23,7 +23,7 @@ namespace Arma3BE.Server
 
         public BEServer(string host, int port, string password, ILog log, IBattlEyeClientFactory battlEyeClientFactory)
         {
-            _host = host;
+            _host = Arma3BEClient.Common.IPInfo.GetIPAddress(host);
             _port = port;
             _password = password;
             _log = log;

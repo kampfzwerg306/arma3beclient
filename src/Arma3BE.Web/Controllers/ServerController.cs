@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Arma3BE.Web.Models;
 
 namespace Arma3BE.Web.Controllers
 {
@@ -13,7 +11,9 @@ namespace Arma3BE.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var model = new ServerModel();
+            model.Players = MvcApplication.StateServer.Players.ToList();
+            return View(model);
         }
     }
 }

@@ -3,9 +3,9 @@ using System.Windows.Media;
 using Arma3BE.Server;
 using Arma3BE.Server.Models;
 using Arma3BEClient.Commands;
+using Arma3BEClient.Common;
 using Arma3BEClient.Common.Logging;
 using Arma3BEClient.Contracts;
-using Arma3BEClient.Helpers;
 using Arma3BEClient.Libs.ModelCompact;
 using Arma3BEClient.Models;
 
@@ -34,7 +34,8 @@ namespace Arma3BEClient.ViewModel
 
             SteamQueryViewModel = new ServerMonitorSteamQueryViewModel(CurrentServer.Host, CurrentServer.Port, _log);
 
-            _beServer = new BEServer(host, CurrentServer.Port, CurrentServer.Password, _log, new WatcherBEClientFactory(_log));
+            _beServer = new BEServer(host, CurrentServer.Port, CurrentServer.Password, _log,
+                new WatcherBEClientFactory(_log));
 
             _beServer.PlayerHandler += (s, e) => PlayersViewModel.SetData(e.Data);
 
@@ -56,10 +57,10 @@ namespace Arma3BEClient.ViewModel
 
             if (!console)
             {
-                _beServer.BanLog +=  (s, e) =>
+                _beServer.BanLog += (s, e) =>
                 {
-                     _beServer.SendCommand(CommandType.Players);
-                     _beServer.SendCommand(CommandType.Bans);
+                    _beServer.SendCommand(CommandType.Players);
+                    _beServer.SendCommand(CommandType.Bans);
                 };
             }
 
@@ -126,15 +127,15 @@ namespace Arma3BEClient.ViewModel
             RaisePropertyChanged("Connected");
         }
 
-        private  void BeServerConnectHandler(object sender, EventArgs e)
+        private void BeServerConnectHandler(object sender, EventArgs e)
         {
-             _beServer.SendCommand(CommandType.Players);
+            _beServer.SendCommand(CommandType.Players);
 
             if (!_console)
             {
-                 _beServer.SendCommand(CommandType.Admins);
-                 _beServer.SendCommand(CommandType.Missions);
-                 _beServer.SendCommand(CommandType.Bans);
+                _beServer.SendCommand(CommandType.Admins);
+                _beServer.SendCommand(CommandType.Missions);
+                _beServer.SendCommand(CommandType.Bans);
             }
 
             RaisePropertyChanged("Connected");

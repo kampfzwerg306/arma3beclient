@@ -1,0 +1,140 @@
+2016-01-31 01:50:59,181 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 01:50:59,190 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 01:50:59,192 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:50:59,437 [7] INFO  unknown Account Login ::1
+2016-01-31 01:50:59,588 [8] INFO  unknown Account Login ::1
+2016-01-31 01:50:59,778 [7] INFO  unknown Account Login ::1
+2016-01-31 01:50:59,806 [7] INFO  unknown Account Login ::1
+2016-01-31 01:52:41,359 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 01:52:41,366 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 01:52:41,368 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:52:46,471 [8] INFO  unknown Account Login ::1
+2016-01-31 01:52:46,697 [10] INFO  unknown Account Login ::1
+2016-01-31 01:52:46,869 [14] INFO  unknown Account Login ::1
+2016-01-31 01:52:46,884 [8] INFO  unknown Account Login ::1
+2016-01-31 01:52:55,794 [11] INFO  unknown Account Login ::1
+2016-01-31 01:52:55,811 [9] INFO  unknown Account Login ::1
+2016-01-31 01:52:55,936 [9] INFO  unknown Account Login ::1
+2016-01-31 01:52:55,951 [10] INFO  unknown Account Login ::1
+2016-01-31 01:53:36,382 [12] INFO  RECREATE CLIENT FOR 46.149.73.255:2302 WITH LAST RECEIVED 00:00:55.0154310
+2016-01-31 01:53:36,382 [12] INFO  Release 46.149.73.255:2302
+2016-01-31 01:53:36,384 [12] INFO  ThreadSafeBattleEyeClient DisposeManagedResources
+2016-01-31 01:53:36,384 [12] INFO  Init 46.149.73.255:2302
+2016-01-31 01:53:36,384 [12] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:53:37,402 [10] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #1 (94.181.44.100:60977) logged in
+]
+2016-01-31 01:53:49,416 [10] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #0: (Global) S.W.A.T: Надеюсь ты меня услышал.
+]
+2016-01-31 01:56:01,726 [25] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Vehicle) D2ks: пока народ собираем, быстро покурить схожу
+]
+2016-01-31 01:56:26,836 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 01:56:26,844 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 01:56:26,846 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:56:29,925 [25] INFO  unknown Account Login ::1
+2016-01-31 01:57:17,631 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 01:57:17,639 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 01:57:17,642 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:57:17,759 [31] INFO  unknown Account Login ::1
+2016-01-31 01:57:17,994 [26] INFO  unknown Account Login ::1
+2016-01-31 01:57:18,008 [32] INFO  unknown Account Login ::1
+2016-01-31 01:58:00,398 [26] INFO  unknown Account Login ::1
+2016-01-31 01:58:00,416 [29] INFO  unknown Account Login ::1
+2016-01-31 01:58:00,546 [31] INFO  unknown Account Login ::1
+2016-01-31 01:58:00,559 [5] INFO  unknown Account Login ::1
+2016-01-31 01:58:12,663 [21] INFO  RECREATE CLIENT FOR 46.149.73.255:2302 WITH LAST RECEIVED 00:00:55.0241222
+2016-01-31 01:58:12,664 [21] INFO  Release 46.149.73.255:2302
+2016-01-31 01:58:12,665 [21] INFO  ThreadSafeBattleEyeClient DisposeManagedResources
+2016-01-31 01:58:12,666 [21] INFO  Init 46.149.73.255:2302
+2016-01-31 01:58:12,666 [21] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 01:58:13,684 [23] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #1 (94.181.44.100:61462) logged in
+]
+2016-01-31 01:58:32,312 [32] INFO  unknown Account Login ::1
+2016-01-31 01:58:32,332 [17] INFO  unknown Account Login ::1
+2016-01-31 01:58:32,465 [25] INFO  unknown Account Login ::1
+2016-01-31 01:58:32,485 [39] INFO  unknown Account Login ::1
+2016-01-31 01:58:32,743 [31] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Side) Stеrn: вылетаю 30 сек
+]
+2016-01-31 01:59:02,417 [12] INFO  unknown Account Login ::1
+2016-01-31 01:59:02,435 [5] INFO  unknown Account Login ::1
+2016-01-31 01:59:02,561 [11] INFO  unknown Account Login ::1
+2016-01-31 01:59:02,575 [39] INFO  unknown Account Login ::1
+2016-01-31 01:59:05,277 [17] INFO  unknown Account Login ::1
+2016-01-31 01:59:05,292 [21] INFO  unknown Account Login ::1
+2016-01-31 01:59:05,405 [31] INFO  unknown Account Login ::1
+2016-01-31 01:59:05,440 [32] INFO  unknown Account Login ::1
+2016-01-31 01:59:08,836 [31] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Vehicle) Raymus: куда высадишь
+]
+2016-01-31 01:59:53,995 [12] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Vehicle) Stеrn: ок
+]
+2016-01-31 02:00:10,039 [42] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+Player #11 Electronic disconnected
+]
+2016-01-31 02:00:54,940 [49] INFO  unknown Account Login ::1
+2016-01-31 02:00:54,961 [32] INFO  unknown Account Login ::1
+2016-01-31 02:00:55,132 [48] INFO  unknown Account Login ::1
+2016-01-31 02:00:55,148 [39] INFO  unknown Account Login ::1
+2016-01-31 02:02:53,278 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:02:53,285 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:02:53,287 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:02:53,461 [7] INFO  unknown Account Login ::1
+2016-01-31 02:03:21,064 [13] INFO  unknown Account Login ::1
+2016-01-31 02:03:21,287 [12] INFO  unknown Account Login ::1
+2016-01-31 02:03:21,305 [9] INFO  unknown Account Login ::1
+2016-01-31 02:03:36,080 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:03:36,088 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:03:36,090 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:03:36,237 [5] INFO  unknown Account Login ::1
+2016-01-31 02:03:47,872 [1] INFO  46.149.73.255:2302 Update client - InitClients
+2016-01-31 02:03:47,881 [1] INFO  Init 46.149.73.255:2302
+2016-01-31 02:03:47,883 [1] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:03:48,029 [5] INFO  unknown Account Login ::1
+2016-01-31 02:03:49,257 [12] INFO  unknown Account Login ::1
+2016-01-31 02:03:50,416 [9] INFO  unknown Account Login ::1
+2016-01-31 02:04:42,915 [19] INFO  RECREATE CLIENT FOR 46.149.73.255:2302 WITH LAST RECEIVED 00:00:55.0350125
+2016-01-31 02:04:42,916 [19] INFO  Release 46.149.73.255:2302
+2016-01-31 02:04:42,917 [19] INFO  ThreadSafeBattleEyeClient DisposeManagedResources
+2016-01-31 02:04:42,918 [19] INFO  Init 46.149.73.255:2302
+2016-01-31 02:04:42,918 [19] INFO  ThreadSafeBattleEyeClient Init
+2016-01-31 02:04:43,935 [20] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+RCon admin #1 (94.181.44.100:60195) logged in
+]
+2016-01-31 02:04:44,932 [9] INFO  message [
+server ip: 46.149.73.255
+messageId:256
+(Group) Forest: вражий вайпаут на основе
+]
+2016-01-31 02:05:09,240 [5] INFO  unknown Account Login ::1
+2016-01-31 02:05:10,594 [9] INFO  unknown Account Login ::1
+2016-01-31 02:05:11,669 [5] INFO  unknown Account Login ::1
+2016-01-31 02:05:12,418 [9] INFO  unknown Account Login ::1
+2016-01-31 02:05:43,681 [9] INFO  unknown Account Login ::1
+2016-01-31 02:05:48,696 [5] INFO  unknown Account Login ::1
+2016-01-31 02:07:03,252 [9] INFO  unknown Account Login ::1
+2016-01-31 02:07:04,371 [13] INFO  unknown Account Login ::1
+2016-01-31 02:07:36,683 [9] INFO  unknown Account Login ::1
+2016-01-31 02:07:37,874 [11] INFO  unknown Account Login ::1

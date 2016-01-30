@@ -27,7 +27,7 @@ namespace Arma3BEClient.Models
 
             ExcecuteCommand = new ActionCommand(() => Task.Run(() =>
             {
-                var iphost = IPInfo.GetIPAddress(Host);
+                var iphost = Common.IPInfo.GetIPAddress(Host);
                 var server = new Server(new IPEndPoint(IPAddress.Parse(iphost), Port));
 
                 var settings = new GetServerInfoSettings();
@@ -60,7 +60,7 @@ namespace Arma3BEClient.Models
             }),
                 () =>
                 {
-                    var iphost = IPInfo.GetIPAddress(Host);
+                    var iphost = Common.IPInfo.GetIPAddress(Host);
 
                     if (string.IsNullOrEmpty(iphost))
                     {
