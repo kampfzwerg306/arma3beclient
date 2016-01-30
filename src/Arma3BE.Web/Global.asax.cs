@@ -2,6 +2,9 @@
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Arma3BE.Server;
+using Arma3BE.Server.State;
+using Arma3BEClient.Common.Logging;
 using log4net.Config;
 
 namespace Arma3BE.Web
@@ -20,12 +23,15 @@ namespace Arma3BE.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var log = new Log();
+            StateServer = new StateServer(new BEServer("server2.tehgam.com", 2302, "pass", log, new WatcherBEClientFactory(log)));
         }
 
         protected void Application_Error()
         {
-            var ex = Server.GetLastError();
-            var t = 0;
         }
+
+        public static StateServer StateServer;
     }
 }

@@ -76,6 +76,8 @@ namespace Arma3BE.Server.Decorators
                         _battlEyeClient.BattlEyeDisconnected -= OnBattlEyeDisconnected;
 
                         if (_battlEyeClient.Connected) _battlEyeClient.Disconnect();
+
+                        _battlEyeClient.Disconnect();
                         _battlEyeClient = null;
                     }
                 }

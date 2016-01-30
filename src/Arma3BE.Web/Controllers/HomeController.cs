@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Arma3BE.Web.Core;
 using Arma3BE.Web.Models;
+using Arma3BEClient.Common.Logging;
 
 namespace Arma3BE.Web.Controllers
 {

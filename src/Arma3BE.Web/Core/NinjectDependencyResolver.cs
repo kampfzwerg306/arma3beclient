@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Arma3BEClient.Common.Logging;
 using Ninject;
 using IDependencyResolver = System.Web.Mvc.IDependencyResolver;
 

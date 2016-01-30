@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using Arma3BEClient.Common.Logging;
 
 namespace Arma3BE.Web.Core
 {

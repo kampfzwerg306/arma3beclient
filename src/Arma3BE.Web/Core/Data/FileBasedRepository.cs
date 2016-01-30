@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 using Arma3BE.Web.Core.Data.Contract;
+using Arma3BEClient.Common.Logging;
 
 namespace Arma3BE.Web.Core.Data
 {

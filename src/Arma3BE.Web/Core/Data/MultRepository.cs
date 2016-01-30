@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using Arma3BE.Web.Core.Data.Contract;
+using Arma3BEClient.Common.Logging;
 
 namespace Arma3BE.Web.Core.Data
 {
