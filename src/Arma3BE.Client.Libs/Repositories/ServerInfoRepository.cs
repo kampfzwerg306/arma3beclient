@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Arma3BEClient.Libs.Repositories
 {
@@ -54,10 +53,12 @@ namespace Arma3BEClient.Libs.Repositories
         }
 
 
+
+
         public ServerInfoRepositoryCache(IServerInfoRepository infoRepository)
         {
             _infoRepository = infoRepository;
-            Task.Run(() => ResetCache());
+            ResetCache();
         }
 
         public void AddOrUpdate(ServerInfoDto serverInfo)
