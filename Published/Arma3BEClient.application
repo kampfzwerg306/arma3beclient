@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="https://cdn.rawgit.com/tym32167/arma3beclient/feature/Auto_Update/Published/Arma3BEClient.application" />
+    <deploymentProvider codebase="https://cdn.rawgit.com/tym32167/arma3beclient/feature/Auto_Update/Published" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
